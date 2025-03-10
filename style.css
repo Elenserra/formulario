@@ -14,7 +14,10 @@
 @media (max-width: 768px) {  
     .pagina_principal {
         background-size: contain; 
-        background-position: top center; /* Ajustar para telas menores */
+        background-position: center 20vw; /* Ajustar para telas menores */
+    }
+    .footer {
+        top: 70vw; 
     }
 }
 .botao {
