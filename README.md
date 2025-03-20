@@ -19,6 +19,7 @@ O projeto é estruturado da seguinte maneira:
   - CSS
   - JavaScript
 ## Melhorias Futuras
+  - Validação dos campos como obrigatórios.
   - Implementação de um backend para armazenar os dados enviados.
   - Adição de confirmação por e-mail após a inscrição.
   - Melhorias na interface para maior acessibilidade e usabilidade.
