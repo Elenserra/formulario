@@ -21,11 +21,20 @@ O projeto é estruturado da seguinte maneira:
 ## Melhorias Futuras
   - Validação dos campos como obrigatórios.
   - Implementação de um backend para armazenar os dados enviados.
-  - Adição de confirmação por e-mail após a inscrição.
   - Melhorias na interface para maior acessibilidade e usabilidade.
 ## Imagens
   > Tela inicial do projeto 
   ![Captura de Tela (456)](https://github.com/user-attachments/assets/27162bae-0005-4e07-8d50-ac8a9b8f4a2e)
+
+  <br><br>
+
+  > Tela de login
+  ![Captura de Tela (462)](https://github.com/user-attachments/assets/12d7374c-69d3-4144-9bc1-d99731fcf9b4)
+
+  <br><br>
+
+  > Tela de cadastro
+  ![Captura de Tela (463)](https://github.com/user-attachments/assets/df885a32-e86a-4ed8-abd5-f31c10b6e23b)
 
   <br><br>
   
