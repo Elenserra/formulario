@@ -10,7 +10,7 @@
     <div class="container">
         <div class="formulario">
             <header>
-                <a class="btn-voltar" href="index.html">
+                <a class="btn-voltar" href="login.html">
                     <img src="imagens/arrow-left-02.png" alt="Voltar">
                     Voltar
                 </a>
@@ -18,7 +18,7 @@
                 <h2 class="subtitulo">Preencha os dados abaixo para fazer sua inscrição no Programa Trilhas.</h2>
             </header>
             <main>
-                <form>
+                <form id="formInscricao" >
                     <p class="intertitulo"><strong>Informações do participante</strong></p>
 
                     <label class="dados_pessoais" for="nome_completo">Nome completo</label>
@@ -39,13 +39,15 @@
 
                     <label class="dados_pessoais" for="email">E-mail</label>
                     <input type="email" id="email" name="email" class="caixa_texto" required>
+                    <p id="emailErro" class="erro-msg"></p>
 
                     <label class="dados_pessoais" for="telefone">Telefone</label>
                     <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" class="caixa_texto" required>
 
                     <div class="upload_documento">
-                        <label class="upload-label" for="file-upload">Documento de identidade</label>
-                        <input type="file" id="file-upload" name="documento" accept=".pdf,.jpg,.png" required>
+                        <label class="upload-label" for="file-upload-identidade">Documento de identidade</label>
+                        <input type="file" id="file-upload-identidade" name="documento" accept=".pdf,.jpg,.png" required>
+                        <span id="identidade" class="identidade">Nenhum arquivo selecionado</span>
                     </div>
 
                     <p class="intertitulo"><strong>Endereço Residencial</strong></p>
@@ -94,37 +96,40 @@
                         <option value="Tocantins">TO</option>
                     </select>
                     <div class="upload_documento">
-                        <label class="upload-label" for="file-upload">Comprovante de residência</label>
-                        <input type="file" id="file-upload" name="comprovante" accept=".pdf,.jpg,.png" required>
+                        <label class="upload-label" for="file-upload-comprovante">Comprovante de residência</label>
+                        <input type="file" id="file-upload-comprovante" name="comprovante" accept=".pdf,.jpg,.png" required>
+                        <span id="comprovante" class="comprovante">Nenhum arquivo selecionado</span>
                     </div>
 
                     <p class="intertitulo"><strong>Trilhas de apredizagem</strong></p>
                     <p class="subintertitulo">Selecione apenas uma trilha</p>
                     <div class="checkbox_trilha">
-                        <label class="item_trilha"><input type="checkbox" id="opcao_trilha" value="Programação Front-end"> 
+                        <label class="item_trilha"><input type="checkbox" id="opcao_trilha" class="trilha" value="Programação Front-end"> 
                             <img src="imagens/icon-front-end.png" alt="Front-end"> 
                             Programação Front-end
                         </label>
-                        <label class="item_trilha"><input type="checkbox" id="opcao_trilha" value="Programação Back-end"> 
+                        <label class="item_trilha"><input type="checkbox" id="opcao_trilha" class="trilha" value="Programação Back-end"> 
                             <img src="imagens/icon-back-end.png" alt="Back-end">
                             Programação Back-end
                         </label>
-                        <label class="item_trilha"><input type="checkbox" id="opcao_trilha" value="Programação de Jogos"> 
+                        <label class="item_trilha"><input type="checkbox" id="opcao_trilha" class="trilha" value="Programação de Jogos"> 
                             <img src="imagens/icon-jogos.png" alt="Jogos">
                             Programação de Jogos
                         </label>
-                        <label class="item_trilha"><input type="checkbox" id="opcao_trilha" value="Design e Experiência"> 
+                        <label class="item_trilha"><input type="checkbox" id="opcao_trilha" class="trilha" value="Design e Experiência"> 
                             <img src="imagens/icon-ux.png" alt="Design e Experiência">
                             Design e Experiência
                         </label>
-                        <label class="item_trilha"><input type="checkbox" id="opcao_trilha" value="Ciência de Dados"> 
+                        <label class="item_trilha"><input type="checkbox" id="opcao_trilha" class="trilha" value="Ciência de Dados"> 
                             <img src="imagens/icon-dados.png" alt="Ciência de Dados">
                             Ciência de Dados
                         </label>
                     </div>
+                    <!-- Mensagem de erro -->
+                    <span id="mensagemErro">Selecione pelo menos uma opção!</span>
 
                     <div class="checkbox_termos">
-                        <input type="checkbox" id="aceitar_termos">
+                        <input type="checkbox" id="aceitar_termos" required>
                         <label class="termos_texto">
                             Declaro que li e concordo com os 
                             <a href="#"><strong>Termos e Condições</strong></a> 
@@ -138,7 +143,7 @@
                             <button type="button" class="cancel-btn" id="botaoCancelar" >Cancelar</button>
                         </a>
                         <a href="#">
-                            <button type="submit" class="submit-btn">Fazer inscrição</button>
+                            <button type="submit" class="submit-btn" id="botaoEnviar" >Fazer inscrição</button>
                         </a>
                     </div>
                 </form>
@@ -153,7 +158,7 @@
             <img src="imagens/Group.png" alt="Imagem inova">
         </div>
     </div>
-
+    
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -158,14 +158,13 @@ body {
     padding: 8px;
     cursor: pointer;
     border-color: #D6D3D1;
-    color: #57534E;
 }
 
 #cpf {
     width: 82%;
     padding: 8px;
     border-color: #D6D3D1;
-    color: #57534E;
+    color: #292524;
 }
 
 #sexo {
@@ -173,8 +172,19 @@ body {
     padding: 8px;
     cursor: pointer;
     border-color: #D6D3D1;
-    color: #57534E;
 }
+
+
+#emailErro {
+    padding-left: 64px;
+    color: red; 
+    font-family: 'Poppins', serif;
+    font-size: 14px; 
+    font-weight: bold; 
+    margin-top: 5px; 
+    display: none; /* Inicialmente escondido */
+}
+
 
 #telefone {
     width: 81.5%;
@@ -191,7 +201,15 @@ body {
     background-repeat: no-repeat;
     background-position: 65px;
     background-size: 84% auto;
-    color:  #59d307;
+}
+
+.identidade, .comprovante {
+    color: red; /* Azul */
+    font-family: 'Poppins', serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    display: block;
 }
 
 .upload-label {
@@ -204,7 +222,7 @@ body {
     color: #57534E;
 }
 
-#file-upload {
+.upload_documento input[type="file"] {
     display: block; 
     width: 72%;
     padding: 63px;
@@ -214,7 +232,7 @@ body {
 }
 
 /* Ocultar o botão de escolha de arquivo */
-#file-upload::-webkit-file-upload-button {
+.upload_documento input[type="file"]::-webkit-file-upload-button {
     display: none; 
 }
 
@@ -228,7 +246,6 @@ body {
     padding: 8px;
     cursor: pointer;
     border-color: #D6D3D1;
-    color: #57534E;
 }
 
 .subintertitulo {
@@ -253,6 +270,18 @@ body {
 #opcao_trilha:checked {
     accent-color: #E43A12; 
 }
+
+
+#mensagemErro {
+    padding-left: 64px;
+    color: red; 
+    font-family: 'Poppins', serif;
+    font-size: 14px; 
+    font-weight: bold; 
+    margin-top: 5px; 
+    display: none; /* Inicialmente escondido */
+}
+
 
 .item_trilha {
     display: flex;
@@ -363,6 +392,7 @@ input[type="checkbox"] {
     color: white
     
 }
+
 
 .footer {
     color: white; 

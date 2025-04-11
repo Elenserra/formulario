@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style_login.css">
+</head>
+<body>
+    <div class="login-container" id="loginForm">
+        <a class="btn-voltar" href="index.html">
+            <img src="imagens/arrow-left-02.png" alt="Voltar">
+        </a>
+
+        <h2>Login</h2>
+        <input type="text" id="login_cpf" class="cpf" placeholder="CPF">
+        <input type="password" id="password" placeholder="Senha">
+        <p id="loginError" class="error">CPF ou senha incorretos!</p>
+        <button class="submit-btn" onclick="login()">Entrar</button>
+
+        <div class="register-container">
+            <p>Ainda não tem conta?</p>
+            <a href="#" class="register-link" onclick="toggleForm('signupForm')">Inscreva-se aqui!</a>
+        </div>
+    </div>
+    <!-- Tela de Cadastro -->
+    <div class="cadastro-container" id="signupForm" style="display: none;">
+        <h2>Cadastra-se</h2>
+        <input type="text" id="nome_completo" name="nome_completo" placeholder="Nome Completo" required>
+        <input type="text" id="signup_cpf" class="cpf" maxlength="14" placeholder="000.000.000-00" required>
+        <input type="email" id="email" placeholder="E-mail" required>
+        <input type="password" id="newPassword" placeholder="Senha" required>
+        <input type="password" id="confirmPassword" placeholder="Confirmar Senha" required>
+        <p id="signupError" class="error">Preencha todos os campos corretamente!</p>
+        <button class="submit-btn" onclick="signup()">Cadastrar</button>
+
+        <div class="register-container">
+            <p>Já tem uma conta?</p>
+            <a href="#" class="register-link" onclick="toggleForm('loginForm')">Fazer login</a>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
