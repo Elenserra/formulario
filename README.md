@@ -10,18 +10,21 @@ O projeto é estruturado da seguinte maneira:
   - **formulario.html** - página contendo o formulário de inscrição.
   - **style.css** - arquivo de estilos para formatação do layout.
 ## Funcionalidades
-  - Formulário para coleta de informações dos candidatos.
-  - Validação dos campos.
-  - Upload de documentos necessários para a inscrição.
-  - Layout responsivo para diferentes dispositivos.
+  - Formulário completo para coleta de informações dos candidatos.
+  - Validação de todos os campos, com obrigatoriedade no preenchimento.
+  - Envio de documentos essenciais para a inscrição, com funcionalidade de upload.
+  - Interface responsiva, adaptável a diferentes tamanhos de tela e dispositivos.
+  - Telas de login e cadastro funcionais e integradas.
+  - Exibição do nome do arquivo carregado no campo de upload, para melhor feedback ao usuário.
+  - Autopreenchimento do formulário com os dados fornecidos durante o cadastro.
 ## Tecnologias Utilizadas
   - HTML
   - CSS
   - JavaScript
 ## Melhorias Futuras
-  - Validação dos campos como obrigatórios.
-  - Implementação de um backend para armazenar os dados enviados.
-  - Melhorias na interface para maior acessibilidade e usabilidade.
+  - Aprimorar a mensagem de sucesso exibida após o envio do formulário e após o cadastro do usuário.
+  - Limpar automaticamente os campos preenchidos ao retornar da tela de cadastro para a tela de login.
+  - Aprimorar o design e a usabilidade das telas de login e cadastro, garantindo uma interface mais intuitiva e agradável.
 ## Imagens
   > Tela inicial do projeto 
   ![Captura de Tela (456)](https://github.com/user-attachments/assets/27162bae-0005-4e07-8d50-ac8a9b8f4a2e)
