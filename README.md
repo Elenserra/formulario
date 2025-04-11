@@ -6,9 +6,11 @@ Este projeto é um formulário interativo para a coleta de dados de inscrição 
 O projeto é estruturado da seguinte maneira:
   - **imagens** - pasta que contém todas as imagens usadas no projeto.
   - **js** - pasta que contém o arquivo **script.js** (arquivo para validação e formatação dos campos do formulário).
-  - **index.html** - página principal do projeto.
   - **formulario.html** - página contendo o formulário de inscrição.
+  - **index.html** - página principal do projeto.
+  - **login.html** - tela de login do processo.
   - **style.css** - arquivo de estilos para formatação do layout.
+  - **style_login.css** - - arquivo de estilos para formatação do layout da tela de login.
 ## Funcionalidades
   - Formulário completo para coleta de informações dos candidatos.
   - Validação de todos os campos, com obrigatoriedade no preenchimento.
