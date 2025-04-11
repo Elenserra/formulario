@@ -9,7 +9,7 @@ O projeto é estruturado da seguinte maneira:
   - **formulario.html** - página contendo o formulário de inscrição.
   - **index.html** - página principal do projeto.
   - **login.html** - tela de login do processo.
-  - **style.css** - arquivo de estilos para a formatação do layout.
+  - **style.css** - arquivo de estilos para a formatação do layout do formulário.
   - **style_login.css** - arquivo de estilos para a formatação do layout da tela de login.
 ## Funcionalidades
   - Formulário completo para coleta de informações dos candidatos.
