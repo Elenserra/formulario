@@ -10,7 +10,7 @@ O projeto é estruturado da seguinte maneira:
   - **index.html** - página principal do projeto.
   - **login.html** - tela de login do processo.
   - **style.css** - arquivo de estilos para a formatação do layout.
-  - **style_login.css** - - arquivo de estilos para a formatação do layout da tela de login.
+  - **style_login.css** - arquivo de estilos para a formatação do layout da tela de login.
 ## Funcionalidades
   - Formulário completo para coleta de informações dos candidatos.
   - Validação de todos os campos, com obrigatoriedade no preenchimento.
